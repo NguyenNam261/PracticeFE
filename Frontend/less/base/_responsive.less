@@ -1,0 +1,488 @@
+@media all and (max-width: 1200px) {
+    .header {
+        &-inner {
+            .logo {
+                padding-left: 80px;
+            }
+            nav {
+                ul {
+                    li {
+                        padding: 15px;
+                    }
+                }
+            }
+            .icon {
+                margin-right: 80px;
+            }
+        }
+    }
+    .slider {
+        height: 1100px;
+        .content {
+            &-slider {
+                margin-left: 90px;
+                margin-top: -100px;
+                #page-name {
+                    font-size: 40px;
+                }
+                #slogan {
+                    font-size: 30px;
+                }
+                #message {
+                    font-size: 11px;
+                }
+                a {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .main-page {
+        .banner {
+            top: 65%;
+            left: 12%;
+            width: 80%;
+            &-inner {
+                .img {
+                    width: 33.33%;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }   
+                .content {
+                    width: 33.33%;
+                    .logo {
+                        padding-top: 10px;
+                    }
+                    #content {
+                        margin: 10px 0px 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        &-top {
+            .contact {
+                .infor {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .header {
+        &-inner {
+            .logo {
+                padding-left: 30px;
+            }
+            nav {
+                ul {
+                    li {
+                        padding: 10px;
+                    }
+                }
+            }
+            .icon {
+                margin-right: 20px;
+            }
+        }
+    }
+    .slider {
+        .content {
+            &-slider {
+                margin-left: 50px;
+                margin-top: -120px;
+                #page-name {
+                    font-size: 30px;
+                }
+                #slogan {
+                    font-size: 25px;
+                }
+                #message {
+                    font-size: 11px;
+                }
+                a {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .main-page {
+        .banner {
+            top: 55%;
+            left: 12%;
+            width: 76%;
+            &-inner {
+                .img {
+                    width: 50%;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }   
+                .content {
+                    width: 50%;
+                }
+            }
+        }
+        .top-sellings {
+            .product {
+                &-detail {
+                    .col(31.3%);
+                    margin: 10px;
+                }
+            }
+        }
+        .brand {
+           &-logo {
+               img {
+                    padding: 30px 10px 30px 10px;
+               }
+           } 
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .cover {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .cover.active {
+        background-color: #222;
+        opacity: 0.8;
+        z-index: 50;
+        left: 160px;
+        .transit(all, .5s);
+    }
+    .header {
+        &-inner {
+            .logo {
+                order: 2;
+                margin-left: 50px;
+                padding: 15px 0px 15px 0px;
+                img {
+                    width: 75%;
+                    height: 75%;
+                }
+            }
+            nav {
+                margin-left: 20px;
+                .menu-icon {
+                    display: block;
+                    order: 1;
+                }
+                ul {
+                    z-index: 999;
+                    .transit(all, .5s);
+                    .transform-mix(translatex(-110%));
+                    box-shadow: 3px 3px 5px 6px #ccc; 
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    background-color: #555;
+                    width: 20vw;
+                    height: 100vh;
+                    li {
+                        border-bottom: 1px solid @main-color;
+                    }
+                }
+                .active {
+                    .transform-mix(translatex(0));
+                }
+            }
+            .icon {
+                order: 3;
+                margin-right: 20px;
+                &-search {
+                    padding: 0px 20px 0px 20px;
+                }
+                &-shopping-basket {
+                    padding: 0px 20px 0px 20px;
+                }
+                &-user {
+                    padding: 0px 20px 0px 25px;
+                }
+            }
+        }
+    }
+    .slider {
+        height: 850px;
+        .content {
+            top: 25%;
+            &-slider {
+                margin-left: 50px;
+                margin-top: -160px;
+                #page-name {
+                    font-size: 30px;
+                }
+                #slogan {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+                #message {
+                    font-size: 10px;
+                    margin-bottom: 30px;
+                    width: 350px;
+                }
+                a {
+                    font-size: 10px;
+                    padding:  10px 20px 10px 20px;
+                }
+            }
+        }
+    }
+    .main-page {
+        .banner {
+            top: 45%;
+            left: 14%;
+            width: 70%;       
+            &-inner {
+                .img {
+                    width: 50%;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }   
+                .content {
+                    width: 50%;
+                    .logo {
+                        padding-top: 25px;
+                    }
+                    &-inner {
+                        #text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .top-sellings {
+            .product {
+                &-detail {
+                    .col(47%);
+                    margin: 10px;
+                }
+            }
+        }
+        .feedback {
+            h1 {
+                font-size: 28px;
+            }
+            &-inner {
+                .feedback-content {
+                    .comment {
+                        font-size: 14px;
+                    }
+                    .client-name {
+                        font-size: 14px;
+                    }
+                    .happy {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .brand {
+            &-logo {
+                img {
+                    width: 100%;
+                    padding: 20px 8px 20px 8px;
+                }
+            } 
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    .cover {
+        position: fixed;
+        width: 100vw;
+        height: 110vh; 
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .cover.active {
+        background-color: #222;
+        opacity: 0.8;
+        z-index: 50;
+        left: 160px;
+        .transit(all, .5s);
+    }
+    .header {
+        &-inner {
+            .logo {
+                order: 2;
+                margin-left: 50px;
+            }
+            nav {
+                .menu-icon {
+                    display: block;
+                    order: 1;
+                    font-size: 14px;
+                }
+                ul {
+                    z-index: 999;
+                    .transit(all, .5s);
+                    .transform-mix(translatex(-110%));
+                    box-shadow: 3px 3px 5px 6px #ccc; 
+                    display: block;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #555;
+                    width: 20vw;
+                    height: 100vh;
+                    li {
+                        border-bottom: 1px solid @main-color;
+                    }
+                }
+                .active {
+                    .transform-mix(translatex(0));
+                }
+            }
+            .icon {
+                order: 3;
+                &-search {
+                    padding: 0px 15px 0px 15px ;
+                }
+                &-shopping-basket {
+                    padding: 0px 15px 0px 15px ;
+                }
+                &-user {
+                    padding: 0px 15px 0px 15px ;
+                }   
+            }
+        }
+    }
+    .slider {
+        height: 1160px;
+        .content {
+            top: 25%;
+            &-slider {
+                margin-left: 50px;
+                margin-top: -200px;
+                #page-name {
+                    font-size: 20px;
+                }
+                #slogan {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                #message {
+                    font-size: 8px;
+                    margin-bottom: 20px;
+                    width: 250px;
+                }
+                a {
+                    font-size: 8px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .main-page {
+        .banner {
+            top: 32%;
+            left: 25%;
+            width: 50%;      
+            &-inner {
+                .img {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }   
+                .content {
+                    width: 100%;
+                    .logo {
+                        padding-top: 25px;
+                    }
+                    &-inner {
+                        #text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .top-sellings {
+            .product {
+                &-detail {
+                    .col(46.5%);
+                    margin: 10px;
+                }
+            }
+        }
+        .feedback {
+            h1 {
+                font-size: 24px;
+            }
+            &-inner {
+                .feedback-content {
+                    .comment {
+                        font-size: 12px;
+                    }
+                    .client-name {
+                        font-size: 12px;
+                    }
+                    .happy {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .brand {
+            &-logo {
+                img {
+                    width: 100%;
+                    padding: 15px 5px 15px 5px;
+                }
+            } 
+        }
+    }
+    .footer {
+        &-top {
+            .connect {
+                &-logo {
+                    img {
+                        width: 25%;
+                    }
+                }
+                &-content {
+                    font-size: 12px;
+                }
+            }
+            .contact {
+                .infor {
+                    padding-left: 30px;
+                    .col(50%);
+                    border-top: none ;
+                    h2 {
+                        font-size: 16px;
+                    }
+                    ul {
+                        li {
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            &-inner {
+                font-size: 12px;
+            }
+        }
+    }
+}
