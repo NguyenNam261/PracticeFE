@@ -200,7 +200,7 @@ body {
 }
 .main-page .banner {
   position: absolute;
-  top: 87%;
+  top: 850px;
   width: 100%;
 }
 .main-page .banner-inner {
@@ -260,7 +260,7 @@ body {
   padding-bottom: 15px;
 }
 .main-page .top-sellings .product-detail {
-  margin: 15px 15px 31px 15px;
+  padding: 15px 15px 22px 15px;
   box-shadow: 0 1px 5px #fff;
 }
 .main-page .top-sellings .product-detail:hover {
@@ -308,7 +308,7 @@ body {
   margin: 5px 0;
 }
 .main-page .feedback {
-  margin-top: 51px;
+  margin-top: 60px;
   text-align: center;
 }
 .main-page .feedback h1 {
@@ -407,6 +407,7 @@ body {
   padding-bottom: 40px;
 }
 .footer-top .contact .infor {
+  padding: 0 15px;
   text-align: left;
 }
 .footer-top .contact .infor h2 {
@@ -451,11 +452,13 @@ body {
     margin-right: 80px;
   }
   .slider {
-    height: 1100px;
+    height: 1000px;
+  }
+  .slider .content {
+    top: 15%;
   }
   .slider .content-slider {
     margin-left: 90px;
-    margin-top: -100px;
   }
   .slider .content-slider #page-name {
     font-size: 40px;
@@ -470,8 +473,8 @@ body {
     font-size: 11px;
   }
   .main-page .banner {
-    top: 65%;
-    left: 12%;
+    top: 550px;
+    left: 10%;
     width: 80%;
   }
   .main-page .banner-inner .img {
@@ -504,26 +507,30 @@ body {
   .header-inner .icon {
     margin-right: 20px;
   }
+  .slider .content {
+    top: 15%;
+  }
   .slider .content-slider {
     margin-left: 50px;
-    margin-top: -120px;
   }
   .slider .content-slider #page-name {
-    font-size: 30px;
+    font-size: 34px;
   }
   .slider .content-slider #slogan {
-    font-size: 25px;
+    font-size: 26px;
   }
   .slider .content-slider #message {
     font-size: 11px;
+    margin-bottom: 40px ;
   }
   .slider .content-slider a {
     font-size: 11px;
+    padding: 15px 35px 15px 35px;
   }
   .main-page .banner {
-    top: 55%;
-    left: 12%;
-    width: 76%;
+    top: 470px;
+    left: 14%;
+    width: 70%;
   }
   .main-page .banner-inner .img {
     width: 50%;
@@ -535,14 +542,8 @@ body {
   .main-page .banner-inner .content {
     width: 50%;
   }
-  .main-page .top-sellings .product-detail {
-    width: 31.3%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin: 10px;
-  }
-  .main-page .brand-logo img {
-    padding: 30px 10px 30px 10px;
+  .main-page .top-sellings {
+    margin-top: 200px;
   }
 }
 @media all and (max-width: 768px) {
@@ -624,11 +625,10 @@ body {
     height: 850px;
   }
   .slider .content {
-    top: 25%;
+    top: 10%;
   }
   .slider .content-slider {
     margin-left: 50px;
-    margin-top: -160px;
   }
   .slider .content-slider #page-name {
     font-size: 30px;
@@ -640,14 +640,14 @@ body {
   .slider .content-slider #message {
     font-size: 10px;
     margin-bottom: 30px;
-    width: 350px;
+    padding-right: 50px;
   }
   .slider .content-slider a {
     font-size: 10px;
     padding: 10px 20px 10px 20px;
   }
   .main-page .banner {
-    top: 45%;
+    top: 350px;
     left: 14%;
     width: 70%;
   }
@@ -667,17 +667,21 @@ body {
   .main-page .banner-inner .content-inner #text {
     display: none;
   }
-  .main-page .top-sellings .product-detail {
-    width: 47%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin: 10px;
+  .main-page .top-sellings {
+    margin-top: 50px;
+  }
+  .main-page .top-sellings .product .col-4 {
+    width: 33.33%;
+  }
+  .main-page .feedback {
+    margin-top: 30px;
   }
   .main-page .feedback h1 {
     font-size: 28px;
   }
   .main-page .feedback-inner .feedback-content .comment {
     font-size: 14px;
+    padding: 0 100px;
   }
   .main-page .feedback-inner .feedback-content .client-name {
     font-size: 14px;
@@ -685,9 +689,30 @@ body {
   .main-page .feedback-inner .feedback-content .happy {
     font-size: 12px;
   }
+  .main-page .brand {
+    margin-top: 70px;
+  }
+  .main-page .brand .col-6 {
+    width: 33.33%;
+  }
   .main-page .brand-logo img {
-    width: 100%;
+    width: 50%;
     padding: 20px 8px 20px 8px;
+  }
+  .main-page .brand-logo #fix-1 {
+    padding-top: 30px;
+  }
+  .main-page .brand-logo #fix-2 {
+    padding-top: 42px;
+  }
+  .main-page .brand-logo #fix-3 {
+    padding-top: 38px;
+  }
+  .footer-top .connect-content {
+    padding: 0 100px;
+  }
+  .footer-top .contact .col-4 {
+    width: 50%;
   }
 }
 @media all and (max-width: 576px) {
@@ -711,6 +736,7 @@ body {
   .header-inner .logo {
     order: 2;
     margin-left: 50px;
+    width: 35%;
   }
   .header-inner nav .menu-icon {
     display: block;
@@ -747,6 +773,7 @@ body {
   }
   .header-inner .icon {
     order: 3;
+    font-size: 14px;
   }
   .header-inner .icon-search {
     padding: 0px 15px 0px 15px ;
@@ -761,11 +788,10 @@ body {
     height: 1160px;
   }
   .slider .content {
-    top: 25%;
+    top: 6%;
   }
   .slider .content-slider {
     margin-left: 50px;
-    margin-top: -200px;
   }
   .slider .content-slider #page-name {
     font-size: 20px;
@@ -777,14 +803,14 @@ body {
   .slider .content-slider #message {
     font-size: 8px;
     margin-bottom: 20px;
-    width: 250px;
+    padding-right: 30px;
   }
   .slider .content-slider a {
     font-size: 8px;
     padding: 10px;
   }
   .main-page .banner {
-    top: 32%;
+    top: 260px;
     left: 25%;
     width: 50%;
   }
@@ -801,20 +827,33 @@ body {
   .main-page .banner-inner .content .logo {
     padding-top: 25px;
   }
+  .main-page .banner-inner .content .logo img {
+    width: 25%;
+  }
+  .main-page .banner-inner .content-inner #content {
+    font-size: 16px;
+  }
   .main-page .banner-inner .content-inner #text {
     display: none;
   }
-  .main-page .top-sellings .product-detail {
-    width: 46.5%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin: 10px;
+  .main-page .top-sellings {
+    margin-top: 100px;
+  }
+  .main-page .top-sellings-menu ul li a {
+    font-size: 16px;
+  }
+  .main-page .top-sellings .product-detail-inner img {
+    width: 90%;
+  }
+  .main-page .top-sellings .product .col-4 {
+    width: 50%;
   }
   .main-page .feedback h1 {
     font-size: 24px;
   }
   .main-page .feedback-inner .feedback-content .comment {
     font-size: 12px;
+    padding: 0 50px;
   }
   .main-page .feedback-inner .feedback-content .client-name {
     font-size: 12px;
@@ -822,21 +861,36 @@ body {
   .main-page .feedback-inner .feedback-content .happy {
     font-size: 11px;
   }
+  .main-page .brand {
+    margin-top: 70px;
+  }
+  .main-page .brand .col-6 {
+    width: 33.33%;
+  }
   .main-page .brand-logo img {
-    width: 100%;
-    padding: 15px 5px 15px 5px;
+    width: 50%;
+    padding: 20px 8px 20px 8px;
+  }
+  .main-page .brand-logo #fix-1 {
+    padding-top: 30px;
+  }
+  .main-page .brand-logo #fix-2 {
+    padding-top: 42px;
+  }
+  .main-page .brand-logo #fix-3 {
+    padding-top: 38px;
   }
   .footer-top .connect-logo img {
     width: 25%;
   }
   .footer-top .connect-content {
+    padding: 0 40px;
+  }
+  .footer-top .connect-content p {
     font-size: 12px;
   }
   .footer-top .contact .infor {
     padding-left: 30px;
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
     border-top: none ;
   }
   .footer-top .contact .infor h2 {
@@ -847,6 +901,201 @@ body {
   }
   .footer-bottom-inner {
     font-size: 12px;
+  }
+}
+@media all and (max-width: 375px) {
+  .cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .cover.active {
+    background-color: #222;
+    opacity: 0.8;
+    z-index: 50;
+    left: 26vw;
+    transition: all, 0.5s;
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+  }
+  .header-inner .logo {
+    order: 2;
+    width: 25%;
+    margin: 0;
+  }
+  .header-inner nav {
+    margin: 0;
+  }
+  .header-inner nav .menu-icon {
+    display: block;
+    order: 1;
+    font-size: 10px;
+  }
+  .header-inner nav .menu-icon i {
+    padding-right: 10px;
+  }
+  .header-inner nav ul {
+    z-index: 999;
+    transition: all, 0.5s;
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transform: translatex(-110%);
+    -webkit-transform: translatex(-110%);
+    -moz-transform: translatex(-110%);
+    -o-transform: translatex(-110%);
+    box-shadow: 3px 3px 5px 6px #ccc;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    width: 25vw;
+    height: 100vh;
+  }
+  .header-inner nav ul li {
+    border-bottom: 1px solid #777;
+  }
+  .header-inner nav .active {
+    transform: translatex(0);
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+  }
+  .header-inner .icon {
+    order: 3;
+    font-size: 10px;
+    margin: 0px -15px 0px -15px;
+  }
+  .header-inner .icon-search {
+    padding: 0px 10px 0px 10px ;
+  }
+  .header-inner .icon-shopping-basket {
+    padding: 0px 10px 0px 10px ;
+  }
+  .header-inner .icon-user {
+    padding: 0px 20px 0px 10px ;
+  }
+  .slider {
+    height: 870px;
+  }
+  .slider .content {
+    top: 4%;
+  }
+  .slider .content-slider {
+    margin-left: 10px;
+  }
+  .slider .content-slider #page-name {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .slider .content-slider #slogan {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .slider .content-slider #message {
+    font-size: 7px;
+    margin: 5px 0px 5px 0px;
+    padding-right: 0px;
+  }
+  .slider .content-slider a {
+    font-size: 7px;
+    padding: 5px;
+  }
+  .main-page .banner {
+    top: 180px;
+    left: 25%;
+    width: 50%;
+  }
+  .main-page .banner-inner .img {
+    width: 100%;
+  }
+  .main-page .banner-inner .img img {
+    width: 100%;
+    display: block;
+  }
+  .main-page .banner-inner .content {
+    width: 100%;
+  }
+  .main-page .banner-inner .content .logo {
+    padding-top: 25px;
+  }
+  .main-page .banner-inner .content .logo img {
+    width: 35%;
+  }
+  .main-page .banner-inner .content-inner #content {
+    font-size: 14px;
+  }
+  .main-page .banner-inner .content-inner #text {
+    display: none;
+  }
+  .main-page .top-sellings {
+    margin-top: 100px;
+  }
+  .main-page .top-sellings-menu ul li a {
+    font-size: 12px;
+  }
+  .main-page .top-sellings .product .col-4 {
+    width: 50%;
+  }
+  .main-page .feedback h1 {
+    font-size: 20px;
+  }
+  .main-page .feedback-inner .feedback-content .comment {
+    font-size: 12px;
+    padding: 0 30px;
+  }
+  .main-page .feedback-inner .feedback-content .client-name {
+    font-size: 12px;
+  }
+  .main-page .feedback-inner .feedback-content .happy {
+    font-size: 11px;
+  }
+  .main-page .brand {
+    margin-top: 70px;
+  }
+  .main-page .brand .col-6 {
+    width: 33.33%;
+  }
+  .main-page .brand-logo img {
+    width: 50%;
+    padding: 20px 8px 20px 8px;
+  }
+  .main-page .brand-logo #fix-1 {
+    padding-top: 30px;
+  }
+  .main-page .brand-logo #fix-2 {
+    padding-top: 42px;
+  }
+  .main-page .brand-logo #fix-3 {
+    padding-top: 38px;
+  }
+  .footer-top .connect-logo {
+    padding-top: 50px;
+  }
+  .footer-top .connect-logo img {
+    width: 30%;
+  }
+  .footer-top .connect-content {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  .footer-top .contact .infor {
+    padding: 0 5px;
+    padding-left: 10px;
+    border-top: none ;
+  }
+  .footer-top .contact .infor h2 {
+    font-size: 16px;
+  }
+  .footer-top .contact .infor ul li a {
+    font-size: 12px;
+  }
+  .footer-bottom-inner {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
