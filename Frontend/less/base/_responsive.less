@@ -1,73 +1,9 @@
 @media all and (max-width: 1200px) {
-    .header {
-        &-inner {
-            .logo {
-                padding-left: 80px;
-            }
-            nav {
-                ul {
-                    li {
-                        padding: 15px;
-                    }
-                }
-            }
-            .icon {
-                margin-right: 80px;
-            }
-        }
-    }
     .slider {
-        height: 1000px;
-        .content {
-            top: 15%;
-            &-slider {
-                margin-left: 90px;
-                #page-name {
-                    font-size: 40px;
-                }
-                #slogan {
-                    font-size: 30px;
-                }
-                #message {
-                    font-size: 11px;
-                }
-                a {
-                    font-size: 11px;
-                }
-            }
-        }
-    }
-    .main-page {
-        .banner {
-            top: 550px;
-            left: 10%;
-            width: 80%;
-            &-inner {
-                .img {
-                    width: 33.33%;
-                    img {
-                        width: 100%;
-                        display: block;
-                    }
-                }   
-                .content {
-                    width: 33.33%;
-                    .logo {
-                        padding-top: 10px;
-                    }
-                    #content {
-                        margin: 10px 0px 10px 0px;
-                    }
-                }
-            }
-        }
-    }
-    .footer {
-        &-top {
-            .contact {
-                .infor {
-                    padding-left: 30px;
-                }
+        background-position: right 30% top;
+        .bg-slider {
+            .content {
+                top: 15%;  
             }
         }
     }
@@ -75,13 +11,10 @@
 @media all and (max-width: 1024px) {
     .header {
         &-inner {
-            .logo {
-                padding-left: 30px;
-            }
             nav {
                 ul {
                     li {
-                        padding: 10px;
+                        padding: 14px;
                     }
                 }
             }
@@ -90,33 +23,11 @@
             }
         }
     }
-    .slider {
-        .content {
-            top: 15%;
-            &-slider {
-                margin-left: 50px;
-                #page-name {
-                    font-size: 34px;
-                }
-                #slogan {
-                    font-size: 26px;
-                }
-                #message {
-                    font-size: 11px;
-                    margin-bottom: 40px ;
-                }
-                a {
-                    font-size: 11px;
-                    padding: 15px 35px 15px 35px;
-                }
-            }
-        }
-    }
     .main-page {
         .banner {
-            top: 470px;
+            top: 820px;
             left: 14%;
-            width: 70%;
+            width: 72%;
             &-inner {
                 .img {
                     width: 50%;
@@ -138,7 +49,7 @@
 @media all and (max-width: 768px) {
     .cover {
         position: fixed;
-        width: 100vw;
+        width: 79%;
         height: 100vh;
         
         opacity: 0.8;
@@ -148,7 +59,7 @@
         background-color: #222;
         opacity: 0.8;
         z-index: 50;
-        left: 160px;
+        left: 21%;
         .transit(all, .5s);
     }
     .header {
@@ -163,7 +74,6 @@
                 }
             }
             nav {
-                margin-left: 20px;
                 .menu-icon {
                     display: block;
                     order: 1;
@@ -190,7 +100,7 @@
             }
             .icon {
                 order: 3;
-                margin-right: 20px;
+                margin-right: 00px;
                 &-search {
                     padding: 0px 20px 0px 20px;
                 }
@@ -198,41 +108,37 @@
                     padding: 0px 20px 0px 20px;
                 }
                 &-user {
-                    padding: 0px 20px 0px 25px;
+                    padding: 0px 20px 0px 20px;
                 }
             }
         }
     }
     .slider {
-        height: 850px;
-        .content {
-            top: 10%;
-            &-slider {
-                margin-left: 50px;
-                #page-name {
-                    font-size: 30px;
-                }
-                #slogan {
-                    font-size: 25px;
-                    margin-bottom: 10px;
-                }
-                #message {
-                    font-size: 10px;
-                    margin-bottom: 30px;
-                    padding-right: 50px;
-                }
-                a {
-                    font-size: 10px;
-                    padding:  10px 20px 10px 20px;
+        .bg-slider {
+            .content {
+                top: 16%;
+                &-slider {
+                    width: 70%;
+                    #page-name {
+                        font-size: 50px;
+                    }
+                    #slogan {
+                        font-size: 34px;
+                    }
+                    #message {
+                        font-size: 14px;
+                        margin-bottom: 50px ;
+                    }
+                    a {
+                        font-size: 14px;
+                        padding: 15px 35px 15px 35px;
+                    }
                 }
             }
         }
     }
     .main-page {
-        .banner {
-            top: 350px;
-            left: 14%;
-            width: 70%;       
+        .banner {       
             &-inner {
                 .img {
                     width: 50%;
@@ -257,8 +163,15 @@
         .top-sellings {
             margin-top: 50px;
             .product {
+                &-detail {
+                    &-inner {
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
                 .col-4 {
-                    width: 33.33%;
+                    width: 50%;
                 }
             }
         }
@@ -322,7 +235,7 @@
 @media all and (max-width: 576px) {
     .cover {
         position: fixed;
-        width: 100vw;
+        width: 79%;
         height: 110vh; 
         opacity: 0.8;
         z-index: -1;
@@ -331,7 +244,7 @@
         background-color: #222;
         opacity: 0.8;
         z-index: 50;
-        left: 160px;
+        left: 21%;
         .transit(all, .5s);
     }
     .header {
@@ -383,35 +296,30 @@
         }
     }
     .slider {
-        height: 1160px;
-        .content {
-            top: 6%;
-            &-slider {
-                margin-left: 50px;
-                #page-name {
-                    font-size: 20px;
-                }
-                #slogan {
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                }
-                #message {
-                    font-size: 8px;
-                    margin-bottom: 20px;
-                    padding-right: 30px;
-                }
-                a {
-                    font-size: 8px;
-                    padding: 10px;
+        height: 1950px;
+        .bg-slider {
+            .content {
+                top: 15%;
+                &-slider {
+                    width: 80%;
+                    margin-left: 0px;
+                    #page-name {
+                        font-size: 50px;
+                    }
+                    #slogan {
+                        font-size: 35px;
+                    }
+                    #message {
+                        padding-right: 50px;
+                    }
                 }
             }
         }
     }
     .main-page {
         .banner {
-            top: 260px;
-            left: 25%;
-            width: 50%;      
+            left: 20%;
+            width: 60%;      
             &-inner {
                 .img {
                     width: 100%;
@@ -522,24 +430,15 @@
             }
             .contact {
                 .infor {
-                    padding-left: 30px;
                     border-top: none ;
-                    h2 {
-                        font-size: 16px;
-                    }
                     ul {
                         li {
                             a {
-                                font-size: 12px;
+                                font-size: 13px;
                             }
                         }
                     }
                 }
-            }
-        }
-        &-bottom {
-            &-inner {
-                font-size: 12px;
             }
         }
     }
@@ -547,7 +446,7 @@
 @media all and (max-width: 375px) {
     .cover {
         position: fixed;
-        width: 100vw;
+        width: 73%;
         height: 100vh; 
         opacity: 0.8;
         z-index: -1;
@@ -556,22 +455,25 @@
         background-color: #222;
         opacity: 0.8;
         z-index: 50;
-        left: 26vw;
+        left: 27%;
         .transit(all, .5s);
     }
     .header {
         &-inner {
             .logo {
                 order: 2;
-                width: 25%;
+                width: 35%;
                 margin: 0;
+                img {
+                    width: 100%;
+                }
             }
             nav {
                 margin: 0;
                 .menu-icon {
                     display: block;
                     order: 1;
-                    font-size: 10px;
+                    font-size: 12px;
                     i {
                         padding-right: 10px;
                     }
@@ -598,7 +500,7 @@
             }
             .icon {
                 order: 3;
-                font-size: 10px;
+                font-size: 12px;
                 margin: 0px -15px 0px -15px;
                 &-search {
                     padding: 0px 10px 0px 10px ;
@@ -607,42 +509,26 @@
                     padding: 0px 10px 0px 10px ;
                 }
                 &-user {
-                    padding: 0px 20px 0px 10px ;
+                    padding: 0px 10px 0px 10px ;
                 }   
             }
         }
     }
     .slider {
-        height: 870px;
-        .content {
-            top: 4%;
-            &-slider {
-                margin-left: 10px;
-                #page-name {
-                    font-size: 15px;
-                    padding-bottom: 5px;
-                }
-                #slogan {
-                    font-size: 12px;
-                    margin-bottom: 5px;
-                }
+        height: 1850px;
+        .bg-slider {
+            .content {
+                top: 10%;
                 #message {
-                    font-size: 7px;
-                    margin: 5px 0px 5px 0px;
-                    padding-right: 0px;
-                }
-                a {
-                    font-size: 7px;
-                    padding: 5px;
+                    padding-right: 0;
                 }
             }
         }
     }
     .main-page {
         .banner {
-            top: 180px;
-            left: 25%;
-            width: 50%;      
+            left: 10%;
+            width: 80%;      
             &-inner {
                 .img {
                     width: 100%;
@@ -656,7 +542,7 @@
                     .logo {
                         padding-top: 25px;
                         img {
-                            width: 35%;
+                            width: 30%;
                         }
                     }
                     &-inner {
@@ -673,35 +559,46 @@
         .top-sellings {
             margin-top: 100px;
             &-menu {
+                text-align: left;
+                border-bottom: unset;
                 ul {
+                    display: inline-block;
                     li {
-                        a {
-                            font-size: 12px;
-                        }
+                        padding-top: 30px;
                     }
                 }
             }
             .product {
+                &-detail {
+                    &-inner {
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+                #product {
+                    text-align: center;
+                }
                 .col-4 {
-                    width: 50%;
+                    width: 100%;
                 }
             }
         }
         .feedback {
             h1 {
-                font-size: 20px;
+                font-size: 30px;
             }
             &-inner {
                 .feedback-content {
                     .comment {
-                        font-size: 12px;
+                        font-size: 14px;
                         padding: 0 30px;
                     }
                     .client-name {
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                     .happy {
-                        font-size: 11px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -713,14 +610,14 @@
             }
             &-logo {
                 img {
-                    width: 50%;
+                    width: 55%;
                     padding: 20px 8px 20px 8px;
                 }
                 #fix-1 {
                     padding-top: 30px;
                 }
                 #fix-2 {
-                    padding-top: 42px;
+                    padding-top: 35px;
                 }
                 #fix-3 {
                     padding-top: 38px;
@@ -734,35 +631,27 @@
                 &-logo {
                     padding-top: 50px;
                     img {
-                        width: 30%;
+                        width: 50%;
                     }
                 }
                 &-content {
-                    font-size: 12px;
+                    font-size: 14px;
                     padding: 0 20px;
                 }
             }
             .contact {
+                .col-4 {
+                    width: 100%;
+                }
                 .infor {
                     padding: 0 5px;
-                    padding-left: 10px;
+                    padding-left: 15px;
                     border-top: none ;
+                    text-align: center;
                     h2 {
-                        font-size: 16px;
-                    }
-                    ul {
-                        li {
-                            a {
-                                font-size: 12px;
-                            }
-                        }
+                        padding-top: 30px;
                     }
                 }
-            }
-        }
-        &-bottom {
-            &-inner {
-                font-size: 10px;
             }
         }
     }

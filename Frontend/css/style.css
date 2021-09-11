@@ -151,13 +151,10 @@ body {
 .slider {
   position: relative;
   height: 1378px;
+  background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
 }
-.slider .bg-slider img {
-  width: 100%;
-  height: 100%;
-  z-index: 21;
-}
-.slider .content {
+.slider .bg-slider .content {
   top: 17%;
   left: 50%;
   position: absolute;
@@ -166,29 +163,29 @@ body {
   -moz-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
 }
-.slider .content-slider {
+.slider .bg-slider .content-slider {
   width: 58.33%;
   padding: 0 15px;
   box-sizing: border-box;
   color: #fff;
 }
-.slider .content-slider #page-name {
+.slider .bg-slider .content-slider #page-name {
   font-size: 60px;
   font-weight: 500;
   margin-bottom: -30px;
 }
-.slider .content-slider #slogan {
+.slider .bg-slider .content-slider #slogan {
   font-size: 40px;
   font-weight: 500;
   margin: 20px 0px 20px 0px;
 }
-.slider .content-slider #message {
+.slider .bg-slider .content-slider #message {
   padding-right: 120px;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 75px;
 }
-.slider .content-slider a {
+.slider .bg-slider .content-slider a {
   width: 170px;
   padding: 15px 48px 15px 48px;
   font-size: 14px;
@@ -200,7 +197,7 @@ body {
 }
 .main-page .banner {
   position: absolute;
-  top: 850px;
+  top: 873px;
   width: 100%;
 }
 .main-page .banner-inner {
@@ -244,7 +241,7 @@ body {
 }
 .main-page .top-sellings-menu ul li .active {
   color: #dd2f31;
-  border-bottom: 1px solid #dd2f31;
+  border-bottom: 2px solid #dd2f31;
   padding-bottom: 15px;
 }
 .main-page .top-sellings-menu ul li a {
@@ -256,18 +253,17 @@ body {
 }
 .main-page .top-sellings-menu ul li a:hover {
   color: #dd2f31;
-  border-bottom: 1px solid #dd2f31;
+  border-bottom: 2px solid #dd2f31;
   padding-bottom: 15px;
+}
+.main-page .top-sellings .product #product:hover {
+  box-shadow: 0 1px 5px #dcdcdc;
+}
+.main-page .top-sellings .product #product:hover .product-icon {
+  display: block;
 }
 .main-page .top-sellings .product-detail {
   padding: 15px 15px 22px 15px;
-  box-shadow: 0 1px 5px #fff;
-}
-.main-page .top-sellings .product-detail:hover {
-  box-shadow: 0 1px 5px #dcdcdc;
-}
-.main-page .top-sellings .product-detail:hover .product-icon {
-  display: block;
 }
 .main-page .top-sellings .product-detail-inner {
   position: relative;
@@ -442,95 +438,24 @@ body {
   text-align: center;
 }
 @media all and (max-width: 1200px) {
-  .header-inner .logo {
-    padding-left: 80px;
-  }
-  .header-inner nav ul li {
-    padding: 15px;
-  }
-  .header-inner .icon {
-    margin-right: 80px;
-  }
   .slider {
-    height: 1000px;
+    background-position: right 30% top;
   }
-  .slider .content {
+  .slider .bg-slider .content {
     top: 15%;
-  }
-  .slider .content-slider {
-    margin-left: 90px;
-  }
-  .slider .content-slider #page-name {
-    font-size: 40px;
-  }
-  .slider .content-slider #slogan {
-    font-size: 30px;
-  }
-  .slider .content-slider #message {
-    font-size: 11px;
-  }
-  .slider .content-slider a {
-    font-size: 11px;
-  }
-  .main-page .banner {
-    top: 550px;
-    left: 10%;
-    width: 80%;
-  }
-  .main-page .banner-inner .img {
-    width: 33.33%;
-  }
-  .main-page .banner-inner .img img {
-    width: 100%;
-    display: block;
-  }
-  .main-page .banner-inner .content {
-    width: 33.33%;
-  }
-  .main-page .banner-inner .content .logo {
-    padding-top: 10px;
-  }
-  .main-page .banner-inner .content #content {
-    margin: 10px 0px 10px 0px;
-  }
-  .footer-top .contact .infor {
-    padding-left: 30px;
   }
 }
 @media all and (max-width: 1024px) {
-  .header-inner .logo {
-    padding-left: 30px;
-  }
   .header-inner nav ul li {
-    padding: 10px;
+    padding: 14px;
   }
   .header-inner .icon {
     margin-right: 20px;
   }
-  .slider .content {
-    top: 15%;
-  }
-  .slider .content-slider {
-    margin-left: 50px;
-  }
-  .slider .content-slider #page-name {
-    font-size: 34px;
-  }
-  .slider .content-slider #slogan {
-    font-size: 26px;
-  }
-  .slider .content-slider #message {
-    font-size: 11px;
-    margin-bottom: 40px ;
-  }
-  .slider .content-slider a {
-    font-size: 11px;
-    padding: 15px 35px 15px 35px;
-  }
   .main-page .banner {
-    top: 470px;
+    top: 820px;
     left: 14%;
-    width: 70%;
+    width: 72%;
   }
   .main-page .banner-inner .img {
     width: 50%;
@@ -549,7 +474,7 @@ body {
 @media all and (max-width: 768px) {
   .cover {
     position: fixed;
-    width: 100vw;
+    width: 79%;
     height: 100vh;
     opacity: 0.8;
     z-index: -1;
@@ -558,7 +483,7 @@ body {
     background-color: #222;
     opacity: 0.8;
     z-index: 50;
-    left: 160px;
+    left: 21%;
     transition: all, 0.5s;
     -webkit-transition: all, 0.5s;
     -moz-transition: all, 0.5s;
@@ -572,9 +497,6 @@ body {
   .header-inner .logo img {
     width: 75%;
     height: 75%;
-  }
-  .header-inner nav {
-    margin-left: 20px;
   }
   .header-inner nav .menu-icon {
     display: block;
@@ -610,7 +532,7 @@ body {
   }
   .header-inner .icon {
     order: 3;
-    margin-right: 20px;
+    margin-right: 00px;
   }
   .header-inner .icon-search {
     padding: 0px 20px 0px 20px;
@@ -619,37 +541,27 @@ body {
     padding: 0px 20px 0px 20px;
   }
   .header-inner .icon-user {
-    padding: 0px 20px 0px 25px;
+    padding: 0px 20px 0px 20px;
   }
-  .slider {
-    height: 850px;
+  .slider .bg-slider .content {
+    top: 16%;
   }
-  .slider .content {
-    top: 10%;
-  }
-  .slider .content-slider {
-    margin-left: 50px;
-  }
-  .slider .content-slider #page-name {
-    font-size: 30px;
-  }
-  .slider .content-slider #slogan {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  .slider .content-slider #message {
-    font-size: 10px;
-    margin-bottom: 30px;
-    padding-right: 50px;
-  }
-  .slider .content-slider a {
-    font-size: 10px;
-    padding: 10px 20px 10px 20px;
-  }
-  .main-page .banner {
-    top: 350px;
-    left: 14%;
+  .slider .bg-slider .content-slider {
     width: 70%;
+  }
+  .slider .bg-slider .content-slider #page-name {
+    font-size: 50px;
+  }
+  .slider .bg-slider .content-slider #slogan {
+    font-size: 34px;
+  }
+  .slider .bg-slider .content-slider #message {
+    font-size: 14px;
+    margin-bottom: 50px ;
+  }
+  .slider .bg-slider .content-slider a {
+    font-size: 14px;
+    padding: 15px 35px 15px 35px;
   }
   .main-page .banner-inner .img {
     width: 50%;
@@ -670,8 +582,11 @@ body {
   .main-page .top-sellings {
     margin-top: 50px;
   }
+  .main-page .top-sellings .product-detail-inner img {
+    width: 80%;
+  }
   .main-page .top-sellings .product .col-4 {
-    width: 33.33%;
+    width: 50%;
   }
   .main-page .feedback {
     margin-top: 30px;
@@ -718,7 +633,7 @@ body {
 @media all and (max-width: 576px) {
   .cover {
     position: fixed;
-    width: 100vw;
+    width: 79%;
     height: 110vh;
     opacity: 0.8;
     z-index: -1;
@@ -727,7 +642,7 @@ body {
     background-color: #222;
     opacity: 0.8;
     z-index: 50;
-    left: 160px;
+    left: 21%;
     transition: all, 0.5s;
     -webkit-transition: all, 0.5s;
     -moz-transition: all, 0.5s;
@@ -785,34 +700,27 @@ body {
     padding: 0px 15px 0px 15px ;
   }
   .slider {
-    height: 1160px;
+    height: 1950px;
   }
-  .slider .content {
-    top: 6%;
+  .slider .bg-slider .content {
+    top: 15%;
   }
-  .slider .content-slider {
-    margin-left: 50px;
+  .slider .bg-slider .content-slider {
+    width: 80%;
+    margin-left: 0px;
   }
-  .slider .content-slider #page-name {
-    font-size: 20px;
+  .slider .bg-slider .content-slider #page-name {
+    font-size: 50px;
   }
-  .slider .content-slider #slogan {
-    font-size: 18px;
-    margin-bottom: 10px;
+  .slider .bg-slider .content-slider #slogan {
+    font-size: 35px;
   }
-  .slider .content-slider #message {
-    font-size: 8px;
-    margin-bottom: 20px;
-    padding-right: 30px;
-  }
-  .slider .content-slider a {
-    font-size: 8px;
-    padding: 10px;
+  .slider .bg-slider .content-slider #message {
+    padding-right: 50px;
   }
   .main-page .banner {
-    top: 260px;
-    left: 25%;
-    width: 50%;
+    left: 20%;
+    width: 60%;
   }
   .main-page .banner-inner .img {
     width: 100%;
@@ -890,23 +798,16 @@ body {
     font-size: 12px;
   }
   .footer-top .contact .infor {
-    padding-left: 30px;
     border-top: none ;
   }
-  .footer-top .contact .infor h2 {
-    font-size: 16px;
-  }
   .footer-top .contact .infor ul li a {
-    font-size: 12px;
-  }
-  .footer-bottom-inner {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media all and (max-width: 375px) {
   .cover {
     position: fixed;
-    width: 100vw;
+    width: 73%;
     height: 100vh;
     opacity: 0.8;
     z-index: -1;
@@ -915,7 +816,7 @@ body {
     background-color: #222;
     opacity: 0.8;
     z-index: 50;
-    left: 26vw;
+    left: 27%;
     transition: all, 0.5s;
     -webkit-transition: all, 0.5s;
     -moz-transition: all, 0.5s;
@@ -923,8 +824,11 @@ body {
   }
   .header-inner .logo {
     order: 2;
-    width: 25%;
+    width: 35%;
     margin: 0;
+  }
+  .header-inner .logo img {
+    width: 100%;
   }
   .header-inner nav {
     margin: 0;
@@ -932,7 +836,7 @@ body {
   .header-inner nav .menu-icon {
     display: block;
     order: 1;
-    font-size: 10px;
+    font-size: 12px;
   }
   .header-inner nav .menu-icon i {
     padding-right: 10px;
@@ -967,7 +871,7 @@ body {
   }
   .header-inner .icon {
     order: 3;
-    font-size: 10px;
+    font-size: 12px;
     margin: 0px -15px 0px -15px;
   }
   .header-inner .icon-search {
@@ -977,38 +881,20 @@ body {
     padding: 0px 10px 0px 10px ;
   }
   .header-inner .icon-user {
-    padding: 0px 20px 0px 10px ;
+    padding: 0px 10px 0px 10px ;
   }
   .slider {
-    height: 870px;
+    height: 1850px;
   }
-  .slider .content {
-    top: 4%;
+  .slider .bg-slider .content {
+    top: 10%;
   }
-  .slider .content-slider {
-    margin-left: 10px;
-  }
-  .slider .content-slider #page-name {
-    font-size: 15px;
-    padding-bottom: 5px;
-  }
-  .slider .content-slider #slogan {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .slider .content-slider #message {
-    font-size: 7px;
-    margin: 5px 0px 5px 0px;
-    padding-right: 0px;
-  }
-  .slider .content-slider a {
-    font-size: 7px;
-    padding: 5px;
+  .slider .bg-slider .content #message {
+    padding-right: 0;
   }
   .main-page .banner {
-    top: 180px;
-    left: 25%;
-    width: 50%;
+    left: 10%;
+    width: 80%;
   }
   .main-page .banner-inner .img {
     width: 100%;
@@ -1024,7 +910,7 @@ body {
     padding-top: 25px;
   }
   .main-page .banner-inner .content .logo img {
-    width: 35%;
+    width: 30%;
   }
   .main-page .banner-inner .content-inner #content {
     font-size: 14px;
@@ -1035,24 +921,37 @@ body {
   .main-page .top-sellings {
     margin-top: 100px;
   }
-  .main-page .top-sellings-menu ul li a {
-    font-size: 12px;
+  .main-page .top-sellings-menu {
+    text-align: left;
+    border-bottom: unset;
+  }
+  .main-page .top-sellings-menu ul {
+    display: inline-block;
+  }
+  .main-page .top-sellings-menu ul li {
+    padding-top: 30px;
+  }
+  .main-page .top-sellings .product-detail-inner img {
+    width: 80%;
+  }
+  .main-page .top-sellings .product #product {
+    text-align: center;
   }
   .main-page .top-sellings .product .col-4 {
-    width: 50%;
+    width: 100%;
   }
   .main-page .feedback h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .main-page .feedback-inner .feedback-content .comment {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 30px;
   }
   .main-page .feedback-inner .feedback-content .client-name {
-    font-size: 12px;
+    font-size: 16px;
   }
   .main-page .feedback-inner .feedback-content .happy {
-    font-size: 11px;
+    font-size: 16px;
   }
   .main-page .brand {
     margin-top: 70px;
@@ -1061,14 +960,14 @@ body {
     width: 33.33%;
   }
   .main-page .brand-logo img {
-    width: 50%;
+    width: 55%;
     padding: 20px 8px 20px 8px;
   }
   .main-page .brand-logo #fix-1 {
     padding-top: 30px;
   }
   .main-page .brand-logo #fix-2 {
-    padding-top: 42px;
+    padding-top: 35px;
   }
   .main-page .brand-logo #fix-3 {
     padding-top: 38px;
@@ -1077,25 +976,23 @@ body {
     padding-top: 50px;
   }
   .footer-top .connect-logo img {
-    width: 30%;
+    width: 50%;
   }
   .footer-top .connect-content {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 20px;
+  }
+  .footer-top .contact .col-4 {
+    width: 100%;
   }
   .footer-top .contact .infor {
     padding: 0 5px;
-    padding-left: 10px;
+    padding-left: 15px;
     border-top: none ;
+    text-align: center;
   }
   .footer-top .contact .infor h2 {
-    font-size: 16px;
-  }
-  .footer-top .contact .infor ul li a {
-    font-size: 12px;
-  }
-  .footer-bottom-inner {
-    font-size: 10px;
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

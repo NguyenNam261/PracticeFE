@@ -1,7 +1,7 @@
 .main-page {
     .banner {
         position: absolute;
-        top: 850px;
+        top: 873px;
         width: 100%;
         &-inner {
             margin: 0;
@@ -47,13 +47,13 @@
                 li {  
                     .active {
                         color: @color-product;
-                        border-bottom:1px solid @color-product;
+                        border-bottom: 2px solid @color-product;
                         padding-bottom: 15px;
                     }   
                     a {
                         &:hover {
                             color: @color-product;
-                            border-bottom:1px solid @color-product;
+                            border-bottom: 2px solid @color-product;
                             padding-bottom: 15px;
                         }
                         font-size: 18px;
@@ -65,16 +65,17 @@
                 }
             }
         }
-        .product {  
-            &-detail {
+        .product {
+            #product {
                 &:hover {
                     box-shadow: 0 1px 5px #dcdcdc;
                     .product-icon {
                         display: block;
                     }                    
                 }
+            }
+            &-detail {
                 padding: 15px 15px 22px 15px;      
-                box-shadow: 0 1px 5px #fff;
                 &-inner {
                     img {
                         width: 100%;
@@ -90,7 +91,7 @@
                                 background-color: @color-product;
                                 color: #fff;                             
                             }
-                            font-size: 14px;
+                            font-size: 14px;                                
                             color: @main-color;
                             display: block;
                             border: 1px solid @color-border;
@@ -100,7 +101,7 @@
                         }                       
                     } 
                 } 
-                .product-infor {
+                    .product-infor {
                     font-size: 14px; 
                     margin-left: 28px;
                     &-name {
@@ -111,9 +112,9 @@
                         font-weight: 500;
                         padding-bottom: 30px;
                         margin: 5px 0;
-                    }
-                }    
-            } 
+                    }                      
+                } 
+            }
         }
     }
     .feedback {
