@@ -28,6 +28,10 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2'), url('myfont.woff') format('woff'), url('myfont.ttf') format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
@@ -83,18 +87,26 @@ body {
   z-index: 22;
 }
 .header-inner {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 .header-inner .logo {
   color: #fff;
   padding: 20px 0px 20px 0px;
 }
 .header-inner nav .menu-icon {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   display: none;
   color: #fff;
   font-weight: 400;
@@ -105,9 +117,13 @@ body {
 }
 .header-inner nav ul {
   line-height: 1.75;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 .header-inner nav ul li {
   padding: 0 26px;
@@ -127,9 +143,13 @@ body {
   font-size: 16px;
 }
 .header-inner .icon {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   color: #fff;
   line-height: 1.2;
   margin-top: 25px;
@@ -169,17 +189,17 @@ body {
   box-sizing: border-box;
   color: #fff;
 }
-.slider .bg-slider .content-slider #page-name {
+.slider .bg-slider .content-slider .page-name {
   font-size: 60px;
   font-weight: 500;
   margin-bottom: -30px;
 }
-.slider .bg-slider .content-slider #slogan {
+.slider .bg-slider .content-slider .slogan {
   font-size: 40px;
   font-weight: 500;
   margin: 20px 0px 20px 0px;
 }
-.slider .bg-slider .content-slider #message {
+.slider .bg-slider .content-slider .message {
   padding-right: 120px;
   font-size: 14px;
   font-weight: 400;
@@ -214,15 +234,15 @@ body {
 .main-page .banner-inner .content .logo {
   padding-top: 30px;
 }
-.main-page .banner-inner .content .logo #lg {
+.main-page .banner-inner .content .logo .lg {
   padding-top: 16px;
 }
-.main-page .banner-inner .content-inner #content {
+.main-page .banner-inner .content-inner .content {
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
 }
-.main-page .banner-inner .content-inner #text {
+.main-page .banner-inner .content-inner .text {
   padding: 0px 30px;
   font-weight: 400;
   font-size: 14px;
@@ -256,10 +276,10 @@ body {
   border-bottom: 2px solid #dd2f31;
   padding-bottom: 15px;
 }
-.main-page .top-sellings .product #product:hover {
+.main-page .top-sellings .product .product-cover:hover {
   box-shadow: 0 1px 5px #dcdcdc;
 }
-.main-page .top-sellings .product #product:hover .product-icon {
+.main-page .top-sellings .product .product-cover:hover .product-icon {
   display: block;
 }
 .main-page .top-sellings .product-detail {
@@ -363,13 +383,13 @@ body {
 .main-page .brand-logo img {
   padding: 40px 15px 40px 15px;
 }
-.main-page .brand-logo #fix-1 {
+.main-page .brand-logo .fix-1 {
   padding-top: 45px;
 }
-.main-page .brand-logo #fix-2 {
+.main-page .brand-logo .fix-2 {
   padding-top: 57px;
 }
-.main-page .brand-logo #fix-3 {
+.main-page .brand-logo .fix-3 {
   padding-top: 53px;
 }
 .footer-top {
@@ -391,10 +411,14 @@ body {
   color: #777;
 }
 .footer-top .connect-icon {
-  color: #777;
   border-bottom: 1px solid #777;
 }
-.footer-top .connect-icon i {
+.footer-top .connect-icon ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-top .connect-icon ul li a i {
+  color: #777;
   font-size: 18px;
   margin: 0px 21px 57px 21px;
 }
@@ -549,13 +573,13 @@ body {
   .slider .bg-slider .content-slider {
     width: 70%;
   }
-  .slider .bg-slider .content-slider #page-name {
+  .slider .bg-slider .content-slider .page-name {
     font-size: 50px;
   }
-  .slider .bg-slider .content-slider #slogan {
+  .slider .bg-slider .content-slider .slogan {
     font-size: 34px;
   }
-  .slider .bg-slider .content-slider #message {
+  .slider .bg-slider .content-slider .message {
     font-size: 14px;
     margin-bottom: 50px ;
   }
@@ -576,7 +600,7 @@ body {
   .main-page .banner-inner .content .logo {
     padding-top: 25px;
   }
-  .main-page .banner-inner .content-inner #text {
+  .main-page .banner-inner .content-inner .text {
     display: none;
   }
   .main-page .top-sellings {
@@ -614,13 +638,13 @@ body {
     width: 50%;
     padding: 20px 8px 20px 8px;
   }
-  .main-page .brand-logo #fix-1 {
+  .main-page .brand-logo .fix-1 {
     padding-top: 30px;
   }
-  .main-page .brand-logo #fix-2 {
+  .main-page .brand-logo .fix-2 {
     padding-top: 42px;
   }
-  .main-page .brand-logo #fix-3 {
+  .main-page .brand-logo .fix-3 {
     padding-top: 38px;
   }
   .footer-top .connect-content {
@@ -709,13 +733,13 @@ body {
     width: 80%;
     margin-left: 0px;
   }
-  .slider .bg-slider .content-slider #page-name {
+  .slider .bg-slider .content-slider .page-name {
     font-size: 50px;
   }
-  .slider .bg-slider .content-slider #slogan {
+  .slider .bg-slider .content-slider .slogan {
     font-size: 35px;
   }
-  .slider .bg-slider .content-slider #message {
+  .slider .bg-slider .content-slider .message {
     padding-right: 50px;
   }
   .main-page .banner {
@@ -738,10 +762,10 @@ body {
   .main-page .banner-inner .content .logo img {
     width: 25%;
   }
-  .main-page .banner-inner .content-inner #content {
+  .main-page .banner-inner .content-inner .content {
     font-size: 16px;
   }
-  .main-page .banner-inner .content-inner #text {
+  .main-page .banner-inner .content-inner .text {
     display: none;
   }
   .main-page .top-sellings {
@@ -779,13 +803,13 @@ body {
     width: 50%;
     padding: 20px 8px 20px 8px;
   }
-  .main-page .brand-logo #fix-1 {
+  .main-page .brand-logo .fix-1 {
     padding-top: 30px;
   }
-  .main-page .brand-logo #fix-2 {
+  .main-page .brand-logo .fix-2 {
     padding-top: 42px;
   }
-  .main-page .brand-logo #fix-3 {
+  .main-page .brand-logo .fix-3 {
     padding-top: 38px;
   }
   .footer-top .connect-logo img {
@@ -889,7 +913,7 @@ body {
   .slider .bg-slider .content {
     top: 10%;
   }
-  .slider .bg-slider .content #message {
+  .slider .bg-slider .content .message {
     padding-right: 0;
   }
   .main-page .banner {
@@ -912,10 +936,10 @@ body {
   .main-page .banner-inner .content .logo img {
     width: 30%;
   }
-  .main-page .banner-inner .content-inner #content {
+  .main-page .banner-inner .content-inner .content-cover {
     font-size: 14px;
   }
-  .main-page .banner-inner .content-inner #text {
+  .main-page .banner-inner .content-inner .text {
     display: none;
   }
   .main-page .top-sellings {
@@ -934,7 +958,7 @@ body {
   .main-page .top-sellings .product-detail-inner img {
     width: 80%;
   }
-  .main-page .top-sellings .product #product {
+  .main-page .top-sellings .product .product-cover {
     text-align: center;
   }
   .main-page .top-sellings .product .col-4 {
@@ -963,13 +987,13 @@ body {
     width: 55%;
     padding: 20px 8px 20px 8px;
   }
-  .main-page .brand-logo #fix-1 {
+  .main-page .brand-logo .fix-1 {
     padding-top: 30px;
   }
-  .main-page .brand-logo #fix-2 {
+  .main-page .brand-logo .fix-2 {
     padding-top: 35px;
   }
-  .main-page .brand-logo #fix-3 {
+  .main-page .brand-logo .fix-3 {
     padding-top: 38px;
   }
   .footer-top .connect-logo {
